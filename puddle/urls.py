@@ -22,4 +22,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('core/', include('core.urls'))#it is a . not a / always remeber that
-] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)#Not to be done in production
